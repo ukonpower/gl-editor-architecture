@@ -1,0 +1,75 @@
+.row {
+	display: flex;
+	align-items: center;
+	padding: 3px 8px;
+	gap: 8px;
+	min-height: 28px;
+}
+
+.label {
+	width: 70px;
+	min-width: 70px;
+	font-size: 12px;
+	color: #999;
+	text-transform: capitalize;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.input {
+	flex: 1;
+	min-width: 0;
+	background: #2a2a2a;
+	border: 1px solid #3a3a3a;
+	border-radius: 3px;
+	color: #e0e0e0;
+	font-size: 12px;
+	padding: 4px 6px;
+	outline: none;
+	font-family: inherit;
+}
+
+.input:focus {
+	border-color: #4a9eff;
+}
+
+.input:disabled {
+	opacity: 0.5;
+}
+
+.checkbox {
+	width: 16px;
+	height: 16px;
+	accent-color: #4a9eff;
+}
+
+.colorWrapper {
+	display: flex;
+	flex: 1;
+	gap: 6px;
+	align-items: center;
+}
+
+.colorInput {
+	width: 28px;
+	height: 28px;
+	padding: 0;
+	border: 1px solid #3a3a3a;
+	border-radius: 3px;
+	background: transparent;
+	cursor: pointer;
+}
+
+.colorInput::-webkit-color-swatch-wrapper {
+	padding: 2px;
+}
+
+.colorInput::-webkit-color-swatch {
+	border: none;
+	border-radius: 2px;
+}
+
+.colorText {
+	flex: 1;
+}

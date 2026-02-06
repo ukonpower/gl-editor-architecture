@@ -1,0 +1,54 @@
+.panel {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.header {
+	padding: 10px 12px;
+	font-weight: 600;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	color: #888;
+	border-bottom: 1px solid #333;
+}
+
+.list {
+	flex: 1;
+	overflow-y: auto;
+}
+
+.item {
+	display: flex;
+	align-items: center;
+	padding: 6px 12px;
+	cursor: pointer;
+	gap: 8px;
+	border-bottom: 1px solid #2a2a2a;
+	transition: background 0.1s;
+}
+
+.item:hover {
+	background: #2a2a2a;
+}
+
+.selected {
+	background: #264f78 !important;
+}
+
+.visibility {
+	font-size: 11px;
+	color: #888;
+	flex-shrink: 0;
+}
+
+.hidden {
+	opacity: 0.4;
+}
+
+.name {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}

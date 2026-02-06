@@ -1,0 +1,34 @@
+.root {
+	padding: 0 4px;
+}
+
+.group {
+	margin-bottom: 2px;
+}
+
+.groupHeader {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	padding: 6px 8px;
+	cursor: pointer;
+	font-weight: 600;
+	font-size: 12px;
+	text-transform: capitalize;
+	color: #aaa;
+	user-select: none;
+}
+
+.groupHeader:hover {
+	color: #ddd;
+}
+
+.arrow {
+	font-size: 10px;
+	width: 12px;
+	text-align: center;
+}
+
+.groupContent {
+	padding-left: 8px;
+}

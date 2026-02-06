@@ -1,0 +1,3 @@
+[submodule "basepower"]
+	path = basepower
+	url = https://github.com/ukonpower/basepower

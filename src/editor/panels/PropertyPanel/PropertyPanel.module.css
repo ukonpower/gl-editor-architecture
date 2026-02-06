@@ -1,0 +1,28 @@
+.panel {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.header {
+	padding: 10px 12px;
+	font-weight: 600;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	color: #888;
+	border-bottom: 1px solid #333;
+}
+
+.content {
+	flex: 1;
+	overflow-y: auto;
+	padding: 8px 0;
+}
+
+.empty {
+	padding: 20px 12px;
+	color: #666;
+	text-align: center;
+	font-style: italic;
+}
