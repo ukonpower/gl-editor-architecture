@@ -169,7 +169,7 @@ useEffect(() => {
 }, [scene]);
 ```
 
-`Renderer.render()`は各オブジェクトの`x`, `y`, `width`, `color`等のgetterを呼ぶため、`setField()`で値が変わった瞬間から次フレームで描画に反映される。Reactの再レンダリングを待つ必要がない。
+`Renderer.render()`は各オブジェクトのプロパティ（`obj.x`, `obj.width`, `obj.color`等）を毎フレーム直接参照するため、`setField()`で内部変数が書き換わった瞬間から次フレームで描画に反映される。Reactの再レンダリングを待つ必要がない。
 
 ```
 PropertyPanel入力 → setField("transform/x", 200)
